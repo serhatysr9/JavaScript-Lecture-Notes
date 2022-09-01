@@ -107,7 +107,7 @@ let values = Object.values(person);
 //3-)Object.entries() => // her preporty ve value'sunu dizi olarak döndürür.
 let entries = Object.entries(person); // ["firtName","osman"] ["surName","Arjin"] şeklinde
 
-//4-)hasOwnProperty() => //   preporty'nın olup olmadığını true yada false döndürür
+//4-)hasOwnProperty() => //   preporty'nın olup olmadığını true yada false döndürür.
 console.log(person.hasOwnProperty("turkey")); //false çünkü bu bir value preporty değil
 console.log(person.hasOwnProperty("firtName")); // true
 
