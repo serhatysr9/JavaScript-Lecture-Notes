@@ -143,7 +143,7 @@ let find1 = dizi1.find((sayi) => sayi > 3);
 console.log(find1); // 4
 
 let find2 = users.find((erkek) => erkek.gender === 1);
-console.log(find2); //{ name: `necmiye`,surname:`guguk`,age:48,gender:2}, yazdırır
+console.log(find2); //{ id: 3, name: `osman`, surname: `arjin`, age: 26, gender: 1}, yazdırır
 
 // findIndex => şartı sağlayan elemanın kaçıncı indexte olduğunu verir
 let findindex1 = dizi1.findIndex((sayi) => sayi > 3);
@@ -152,7 +152,7 @@ console.log(findindex1); // 3
 let findindex2 = users.findIndex((erkek) => erkek.gender === 1);
 console.log(findindex2); // 1
 
-// sort=> sıralama işlemi yapar. sıramala işlemlerini stringlerde yapar, int ile yaparsak hata veririrorjinay array'i değiştirir
+// sort=> sıralama işlemi yapar. sıramala işlemlerini stringlerde yapar, int ile yaparsak hata verir.
 
 let names = [`hamdi`, `osman`, `arjin`, `cemşit`];
 names.sort();

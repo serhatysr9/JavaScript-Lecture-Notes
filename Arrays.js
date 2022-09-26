@@ -36,18 +36,18 @@ let name3 = ["3. adım"];
 let con1 = name1.concat(name2).concat(name3);
 console.log(con1); // ["osman","Arjin","Bahattin","Tanpınar","3. adım"]
 
-// 4=> indexOf lasftIndexOf => bir dizide aradıgınız elemanın olup olmadıgını gösterir varsa kacıncı indexte oldugunu gösterir
+// 4=> indexOf => bir dizide aradıgınız elemanın olup olmadıgını gösterir varsa kacıncı indexte oldugunu gösterir
 
-console.log(name1.indexOf("Bahattin")); // 2 => 2. idexte eger olmasaydı -1 döndürürdü
+console.log(name1.indexOf("Bahattin")); // 2 => 2. idexte, eger olmasaydı -1 döndürürdü
 
 // lasftIndexOf => bir dizide aradıgınız elemanın sonuncusunun index numarasını verir
 let name4 = ["osman", "Arjin", "Bahattin", "osman", "necmi", "Osman"];
 console.log(name4.lastIndexOf("osman")); // 3. index  Ve  büyük kücük harf ayrımı yapar
 
 const numbers = [1, 2, 3, 4, 5, 3, 1, 2];
-console.log(numbers.lastIndexOf(2)); // 7
-console.log(numbers.lastIndexOf(0)); // -1
-console.log(numbers.lastIndexOf(1)); //  6
+console.log(numbers.lastIndexOf(2)); // 7. index
+console.log(numbers.lastIndexOf(0)); // -1, yani böyle bir eleman yok
+console.log(numbers.lastIndexOf(1)); //  6. index
 
 // inculudes() => aradıgımız deger var mı yok mu => true false döndürür
 
@@ -67,8 +67,8 @@ console.log(name1.join(" ")); //osman Arjin Bahattin
 console.log(name1.join(", ")); //osman, Arjin, Bahattin
 console.log(name1.join(" # ")); //osman # Arjin # Bahattin
 
-// slice("baslangıc","bitis") =>  istenen indexteki degerleri ve arasındaki giger degerleri keser
-// NOT: normal bir parafta ise verilen index numaraları ve aralarındaki değerleri keser
+// slice("baslangıc","bitis") =>  istenen başlangıç ve bitiş index numaraları arasındaki degerleri keser
+// NOT: normal bir parafta ise her harf, sayı ve boşluğu birer index olarak kabul eder
 console.log(name4.slice(1, 6)); // ["Arjin","Bahattin","osman","necmi","Osman"]
 console.log(paragraph.slice(1, 6)); // "sman "
 
@@ -78,14 +78,12 @@ let name5 = ["osman", "Arjin", "Bahattin", "osman", "necmi", "Osman"];
 
 console.log(name5.splice()); // tüm degerleri siler => []
 
-let name6 = name5.splice(2, 2, "recai", "zade");
-console.log(name5.splice(2, 2, "recai", "zade")); // ["Bahattin","osman"] sadece kesilen kısmı gösterir
+let name6 = name5.splice(2, 2);
+console.log(name5.splice(2, 2)); // ["Bahattin","osman"] sadece kesilen kısmı gösterir
 console.log(name6); // yine ["Bahattin","osman"] sadece kesilen kısmı gösterir
 
-console.log(name5);
-//name 6 degiskeni tanımlandıktan sonra console.log(name5) yazılırsa=>["osman","Arjin","recai","zadee","necmi","Osman"]
-name5.splice(2, 2, "recai", "zade"); // yada oncelikle method atanır sonra yazdırılır
-console.log(name5);
+name5.splice(2, 2, "recai", "zade");
+console.log(name5); // ["osman","Arjin","recai","zadee","necmi","Osman"]
 // === console.log(name5.splice(2,2,"recai" , "zade")) => ["osman","Arjin","recai","zadee","necmi","Osman"] sonuclar aynı
 
 // push => dizinin sonuna yeni bir deger ekleriz
@@ -94,6 +92,7 @@ name5.push("sona eleman eklendi");
 console.log(name5); // =>["osman","Arjin","Bahattin","osman","necmi","Osman","sona eleman eklendi"]
 
 // pop => son index'i silmek icin kullanılır
+//let name4 = ["osman", "Arjin", "Bahattin", "osman", "necmi", "Osman"];
 let son1 = name4.pop();
 let son2 = name4.pop();
 console.log(son1, son2); // "Osman" "necmi"

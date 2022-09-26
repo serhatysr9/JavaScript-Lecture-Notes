@@ -1,15 +1,16 @@
 // DATA TYPES  Primitive(ilkel)  and Non-Primitive (ilkel olmayan)
 
 // Primitive => number , string , booleans (true/false) , null, undefined
-// Verilen değerler değiştirilemez
 let world = "javaScript";
-world[0] = "y"; //1. değeri 'y' yapmaya yarar
+world = "y"; //1. değeri 'y' yapmaya yarar.
 console.log(world); // ekrana JavaScript yazar. Çünkü primitive veriler değiştirilemez
+world = `y`;
+console.log(world); // ekrana `y` yazdırır
 
-//Karşılaştırma yaparken değerlere öre karşılaştırma yapar
+//Karşılaştırma yaparken değerlere göre karşılaştırma yapar
 let numberOne = 11,
   numberTwo = 11;
-console.log(numberOne == numberTwo); //ekrana False yazar
+console.log(numberOne == numberTwo); //ekrana true yazar
 
 let js = "JavaScript";
 let py = "Python";
@@ -61,10 +62,9 @@ let mass = 72;
 // if above .5 up if less 0.5 down rounding
 
 const PI = Math.PI;
-
-console.log(math.round(PI)); //  3 to round values to the nearest number
-console.log(math.floor(PI)); //  3 rounding down
-console.log(math.ceil(PI)); //  4 rounding up
+console.log(Math.round(PI)); //  3 to round values to the nearest number
+console.log(Math.floor(PI)); //  3 rounding down
+console.log(Math.ceil(PI)); //  4 rounding up
 console.log(Math.min(-5, 3, 20, 4, 5, 10)); // -5, returns the minimum value
 console.log(Math.max(-5, 3, 20, 4, 5, 10)); // 20, returns the maximum value
 

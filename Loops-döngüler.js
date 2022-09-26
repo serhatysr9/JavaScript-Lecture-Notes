@@ -115,13 +115,13 @@ for (let name3 of name1) {
 // Exercises
 
 //1-)    0'dan 10'a kadar olan sayıları yan yana yazdırma while ve do while kullanarak
-let i = 0;
-let a = [];
+let x = 0;
+let y = [];
 do {
-  a.push(i);
+  a.push(x);
   i++;
-} while (i < 11);
-console.log(a);
+} while (x < 11);
+console.log(y);
 
 while (i < 11) {
   a.push(i);
@@ -138,8 +138,8 @@ console.log(a.reverse(""));
 
 //4-)örüntü: her satırda bir öncekine eklenen #
 
-let a = [];
-let b = `#`;
+let z = [];
+let t = `#`;
 for (let i = 0; i < 8; i++) {
-  console.log((a += b));
+  console.log((z += t));
 }

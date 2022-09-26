@@ -1,8 +1,7 @@
 // SETS and GETS
 // => array ve object'e benzer
 
-// SETS
-// =>Set benzersiz değerleri tutar. Her veri tipinde değer tutabilir. Fakat aynı değeri birden fazla kez içeremez
+// SETS => Set benzersiz değerleri tutar. Her veri tipinde değer tutabilir. Fakat aynı değeri birden fazla kez içeremez
 
 let name1 = new Set(); // boş bir set oluşturulur
 
@@ -12,7 +11,7 @@ for (const isim of name2) {
   console.log(isim);
 }
 
-name2.forEach((isim) => console.log(isim)); // for ve forEach sonucu ayn4
+name2.forEach((isim) => console.log(isim)); // for ve forEach sonucu aynı
 
 // NOT: En önemli özelliği aynı eleman içermez. büyük küçük harfe duyarlı. eleman sayısı olarak aynı olanları 1 defa sayar
 
@@ -32,6 +31,7 @@ console.log(isim1); // {"serhat","yasar","selim","nur","helvi","Serhat","Nur"}
 console.log(isim1.size); // 7
 
 // add => set'e veri eklememizi sağlar
+let name3 = new Set(["osman", "arjin", "hamdi"]);
 
 name3.add(`racaizade`);
 console.log(name3); // {"osman","arjin","hamdi","racaizade"}
