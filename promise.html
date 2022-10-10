@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box,
+      .box2 {
+        margin-top: 100px;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        transition: all 3s;
+      }
+
+      .box.efect {
+        transform: scale(2) rotate(90deg);
+      }
+      .box.circle {
+        border-radius: 50%;
+      }
+      .box.move {
+        transform: translateX(250px);
+      }
+      .box.color {
+        background-image: linear-gradient(red, yellow);
+      }
+      .box2 {
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        transition: all 3s;
+      }
+      .box2.efect {
+        width: 300px;
+        height: 300px;
+        transform: rotate(90deg);
+      }
+      .box2.circle {
+        border-radius: 50%;
+      }
+      .box2.move {
+        transform: translateX(250px);
+      }
+      .box2.color {
+        background-image: linear-gradient(red, yellow);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+
+    <script src="./Promise.js"></script>
+  </body>
+</html>
